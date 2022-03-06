@@ -1,11 +1,12 @@
 import { createApp } from "vue";
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createWebHashHistory, createRouter } from "vue-router";
+import 'normalize.css'
 import './assets/css/index.scss'
 import App from "./App.vue";
 import Home from "./views/Home.vue";
 import Doc from './views/Doc.vue'
 
-const history = createMemoryHistory();
+const history = createWebHashHistory();
 const router = createRouter({
   history,
   routes: [
